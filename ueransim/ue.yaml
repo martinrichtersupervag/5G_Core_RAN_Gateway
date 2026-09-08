@@ -44,3 +44,8 @@ ciphering:
   EA1: true
   EA2: true
   EA3: true
+
+# Maximum data rate per UE for user-plane integrity protection
+integrityMaxRate:
+  uplink: 'full'
+  downlink: 'full'
