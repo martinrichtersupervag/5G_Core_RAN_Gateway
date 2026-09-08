@@ -1,0 +1,46 @@
+# IMSI number of the UE: [MCC||MNC||MSIN] (15 digits)
+supi: 'imsi-999700000000001'
+mcc: '999'
+mnc: '70'
+
+# Security key (K) and Operator key (OP/OPC)
+key: '465B5CE8B199B49FAA5F0A2EE238A6BC'
+op: 'E8ED289DEBA952E4283B54E88E6183CA'
+opType: 'OPC'
+amf: '8000'
+imei: '356938035643803'
+imeiSv: '4370816125816'
+
+# List of gNodeB IP addresses to search and connect
+gnbSearchList:
+  - 127.0.0.1
+
+# Initial PDU Session establishment configuration
+sessions:
+  - type: 'IPv4'
+    apn: 'internet'
+    slice:
+      sst: 1
+      sd: 0x000001
+
+# Configured NSSAI
+configured-nssai:
+  - sst: 1
+    sd: 0x000001
+
+# Default NSSAI
+default-nssai:
+  - sst: 1
+    sd: 0x000001
+
+# Supported Integrity algorithms (priority order)
+integrity:
+  IA1: true
+  IA2: true
+  IA3: true
+
+# Supported Ciphering algorithms (priority order)
+ciphering:
+  EA1: true
+  EA2: true
+  EA3: true

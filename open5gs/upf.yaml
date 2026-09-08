@@ -1,0 +1,22 @@
+logger:
+  file:
+    path: /var/log/open5gs/upf.log
+    level: info
+
+global:
+  max:
+    ue: 1024
+    peer: 64
+
+upf:
+  pfcp:
+    server:
+      - address: 127.0.0.7
+        port: 8805
+  gtpu:
+    server:
+      - address: 127.0.0.7
+  subnet:
+    - addr: 10.45.0.1/16
+      dnn: internet
+      dev: ogstun

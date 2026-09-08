@@ -1,0 +1,22 @@
+mcc: '999'          # Mobile Country Code (MCC)
+mnc: '70'           # Mobile Network Code (MNC)
+nci: '0x000000010'  # NR Cell Identity
+idLength: 32        # Length of gNB ID
+tac: 1              # Tracking Area Code (TAC)
+
+linkIp: 127.0.0.1   # gNB's local IP address for SCTP link
+ngapIp: 127.0.0.1   # gNB's local IP address for N2/NGAP interface
+gtpIp: 127.0.0.1    # gNB's local IP address for N3/GTP-U interface
+
+# Open5GS AMF connection parameters
+amfConfigs:
+  - address: 127.0.0.5
+    port: 38412
+
+# Supported Network Slices
+slices:
+  - sst: 1
+    sd: 0x000001
+
+# Radio parameters
+ignoreStreamIds: true

@@ -1,0 +1,47 @@
+logger:
+  file:
+    path: /var/log/open5gs/smf.log
+    level: info
+
+global:
+  max:
+    ue: 1024
+    peer: 64
+
+smf:
+  sbi:
+    server:
+      - address: 127.0.0.4
+        port: 7777
+    client:
+      scp:
+        - address: 127.0.0.200
+          port: 7777
+      nrf:
+        - address: 127.0.0.10
+          port: 7777
+  gtpc:
+    server:
+      - address: 127.0.0.4
+  pfcp:
+    server:
+      - address: 127.0.0.4
+    client:
+      upf:
+        - address: 127.0.0.7
+          dnn:
+            - internet
+  info:
+    version: 1.0.0
+  subnet:
+    - addr: 10.45.0.0/16
+      dnn: internet
+      dev: ogstun
+  dns:
+    - 8.8.8.8
+    - 1.1.1.1
+    - 2001:4860:4860::8888
+  mtu: 1400
+  ctf:
+    enabled: auto
+  freeDiameter: /etc/freeDiameter/smf.conf
