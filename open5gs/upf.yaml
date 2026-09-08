@@ -17,6 +17,7 @@ upf:
     server:
       - address: 127.0.0.7
   session:
-    - subnet: 10.45.0.1/16
+    - subnet: 10.45.0.0/16
+      gateway: 10.45.0.1
       dnn: internet
-      dev: ogstun 
+      dev: ogstun
