@@ -15,6 +15,20 @@ imeiSv: '4370816125816846'
 gnbSearchList:
   - 127.0.0.1
 
+# UAC Access Identities Configuration
+uacAic:
+  mps: false
+  mcs: false
+
+# UAC Access Control Class
+uacAcc:
+  normalClass: 0
+  class11: false
+  class12: false
+  class13: false
+  class14: false
+  class15: false
+
 # Initial PDU Session establishment configuration
 sessions:
   - type: 'IPv4'
