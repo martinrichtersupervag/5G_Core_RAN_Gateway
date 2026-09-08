@@ -13,10 +13,14 @@ amfConfigs:
   - address: 127.0.0.5
     port: 38412
 
-# Supported Network Slices
+# Supported Network Slices (supports standard SST 1 as well as SST 1 with SD)
 slices:
+  - sst: 1
   - sst: 1
     sd: 0x000001
 
 # Radio parameters
 ignoreStreamIds: true
+
+# Cell access type (defaults to 'nr')
+cellAccessType: nr
