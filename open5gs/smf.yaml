@@ -15,12 +15,11 @@ smf:
         port: 7777
     client:
       scp:
-        - address: 127.0.0.200
-          port: 7777
-      nrf:
-        - address: 127.0.0.10
-          port: 7777
+        - uri: http://127.0.0.200:7777
   gtpc:
+    server:
+      - address: 127.0.0.4
+  gtpu:
     server:
       - address: 127.0.0.4
   pfcp:
@@ -32,7 +31,11 @@ smf:
           dnn:
             - internet
   info:
-    version: 1.0.0
+    - s_nssai:
+        - sst: 1
+          sd: 000001
+          dnn:
+            - internet
   session:
     - subnet: 10.45.0.0/16
       gateway: 10.45.0.1
