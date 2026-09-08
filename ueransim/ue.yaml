@@ -9,7 +9,7 @@ op: 'E8ED289DEBA952E4283B54E88E6183CA'
 opType: 'OPC'
 amf: '8000'
 imei: '356938035643803'
-imeiSv: '4370816125816'
+imeiSv: '4370816125816846'
 
 # List of gNodeB IP addresses to search and connect
 gnbSearchList:
